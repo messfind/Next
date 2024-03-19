@@ -4,7 +4,7 @@ import "./globals.css";
 import NavBar from "./NavBar";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import Login from "./login/login";
+import Login from "./login/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,11 +24,10 @@ export default function RootLayout({
         <div className='flex bg-[#4c4587] w-[1150px] m-auto pr-[50px] pl-[50px] minHeight-[100vh] justify-between flex-row'>
         <Header />
         <NavBar />
-        
           <main>{children}</main>
-          <Footer />
         </div>
-        <Login/>
+        <Login />
+        <Footer />
       </body>
     </html>
   );
