@@ -4,7 +4,7 @@ import "./globals.css";
 import NavBar from "./NavBar";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import Login from "./login/page";
+// import Login from "./login/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
         <NavBar />
           <main>{children}</main>
         </div>
-        <Login />
+        {/* <Login /> */}
         <Footer />
       </body>
     </html>
